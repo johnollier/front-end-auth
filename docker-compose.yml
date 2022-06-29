@@ -12,4 +12,9 @@ services:
       - "8180:8080"
     depends_on:
       - openldap
+  redis:
+    container_name: redis
+    image: redis:3.2.9 
+    ports:
+      - 6379:6379
 
